@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ product.name }}の詳細情報</title>
+</head>
+<body>
+    <h1>{{ product.name }}の詳細情報</h1>
+    <img src="{{ product.image.url }}" alt="{{ product.name }}" width="300">
+    <p>価格: ¥{{ product.price }}</p>
+    <!-- <p>カテゴリー: {{ product.category }}</p> -->
+    <p>{{ product.description }}</p>
+    <a href="{% url 'product_delete' product.id %}">
+        <h2>削除</h2>
+    </a>
+</body>
+</html>
