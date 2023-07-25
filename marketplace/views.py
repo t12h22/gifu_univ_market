@@ -22,9 +22,9 @@ def product_create(request):
         form = ProductForm()
     return render(request, 'product_create.html', {'form': form})
 
-def delete_product(request, product_id):
+def product_delete(request, product_id):
     product = get_object_or_404(Product, id=product_id)
     if request.method == 'POST':
         product.delete()
         return redirect('product_list')
-    return render(request, 'confirm_product_delete.html', {'product': product})
+    return render(request, 'product_delete.html', {'product': product})

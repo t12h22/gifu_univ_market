@@ -11,5 +11,5 @@ urlpatterns = [
     # 商品登録用のURLパターンを追加
     path('product/create/', views.product_create, name='product_create'),
 
-    path('product/<int:product_id>/delete/', views.delete_product, name='product_delete'),
+    path('product/<int:product_id>/delete/', views.product_delete, name='product_delete'),
 ]
