@@ -8,8 +8,9 @@ urlpatterns = [
     # 商品詳細ページのURLパターン
     path('product/<int:product_id>/', views.product_detail, name='product_detail'),
 
-    # 商品登録用のURLパターンを追加
+    # 商品登録ページのURLパターン
     path('product/create/', views.product_create, name='product_create'),
 
+    # 商品削除ページのURLパターン
     path('product/<int:product_id>/delete/', views.product_delete, name='product_delete'),
 ]
