@@ -10,5 +10,8 @@
         {% csrf_token %}
         <input type="submit" value="Delete">
     </form>
+    <a href="{% url 'product_list' %}">
+        <h4>戻る</h4>
+    </a>
 </body>
 </html>
