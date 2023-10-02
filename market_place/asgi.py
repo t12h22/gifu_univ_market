@@ -1,5 +1,5 @@
 """
-ASGI config for gifu_univ_market project.
+ASGI config for market_place project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'gifu_univ_market.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'market_place.settings')
 
 application = get_asgi_application()
